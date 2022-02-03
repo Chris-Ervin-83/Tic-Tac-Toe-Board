@@ -3,18 +3,49 @@
     text-align: center;
 }
 
-.top-left, .top-middle, .top-right, .center-left, .center-middle, .center-right, .bottom-left, .bottom-middle, .bottom-right{
+.row > div {
     float: left;
     height: 100px;
     width: 100px;
+    cursor: pointer;
+    font-size: 75px;
+    line-height: 100px;
 }
 
 .row{
     clear: both;
     margin: auto;
-    width: 302px;    
+    width: 302px;   
 }
 
-.top-left, .top-middle, .top-right{
-    border-bottom: 1px;
+.left{
+    border-right: 1px solid black;
 }
+
+.right{
+   border-left: 1px solid black;
+}
+
+.top{
+    border-bottom: 1px solid black;
+}
+
+.bottom{
+    border-top: 1px solid black;
+}
+
+#restart {
+    padding: 10px 20px;
+    background-color: var(--btn-bg);
+    border: none;
+    border-radius: 20px;
+    color: var(--bg);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  body {
+    background-color: rgba(223, 168, 106, 0.822);
+} 
